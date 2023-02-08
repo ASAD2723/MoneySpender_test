@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    width: 1000px;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background: #ffffff;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: sticky;
+    top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerImg{
+    padding-left: 1px;
+    padding-right: 20px;
+    border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.header .money {
+    font-size: 40px;
+    margin: 0 2px;
+    font-weight: 900;
+    color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerText{
+    color: #000;
 }
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 25px;
+}
+
+.card .card-item {
+    width: calc(30% - 12px);
+    padding: 10px;
+    background-color: #fff;
+    
+    border-radius: 10px;
+}
+
+.card-item img {
+    width: 100%;
+    height: 175px;
+    object-fit: contain !important;
+}
+
+.card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 10px;
+}
+
+.card-text h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions span {
+    width: 100%;
+    font-size: 26px;
+    padding: 9px 0;
+    font-weight: bold;
+    text-align: center;
+    color: #b4a5a5;
+}
+
+.btn {
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.btn-buy {
+    color: #fff;
+    background-color: #20de59dc;
+    border: 1px solid #20de59dc;
+    border-radius: 0 10px 10px 0;
+}
+
+.btn-sell {
+    color: #ffffff;
+    background-color: #de2053;
+    border: 1px solid #de2053;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.footer {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.footer-header {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 10px;
+    color: #de1237;
+}
+
+.footer-basket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #504c4c;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-container{
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 10px;
+}
+.footer .button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .button-container span{
+    font-size: 20px;
+    color: #de1237;
+    font-weight: 900;
+}
+
+
+.btn-reset {
+    color: #fff;
+    background-color: #de2053;
+    border: 1px solid #de2053;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+
+

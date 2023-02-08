@@ -1,9 +1,22 @@
-import React from 'react'
+import React from "react";
+import CardItem from "./CardItem";
+import '../App.css';
 
-const Card = () => {
+const Card = ({ products, setBasket, basket, total, money }) => {
   return (
-    <h1>This is a card.</h1>
-  )
-}
+    <div className={"card"}>
+      {products.map((item) => (
+        <CardItem
+          setBasket={setBasket}
+          basket={basket}
+          key={item.id}
+          product={item}
+          total={total}
+          money={money}
+        />
+      ))}
+    </div>
+  );
+};
 
-export default Card
+export default Card;
